@@ -1,7 +1,13 @@
-import type { NextConfig } from "next";
+const nextConfig = {
+  experimental: {
+    appDir: true,
+  },
+  images: {
+    domains: [
+      'res.cloudinary.com',
+      'avatars.githubusercontent.com'
+    ]
+  }
+}
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
-
-export default nextConfig;
+module.exports = nextConfig
